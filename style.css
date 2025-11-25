@@ -1,0 +1,599 @@
+/* Custom Styles untuk Presentasi Fiqh */
+.arabic {
+  font-family: "Amiri", serif;
+  direction: rtl;
+}
+
+/* Slide Management */
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Navigation */
+.nav-btn {
+  background: #059669;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav-btn:hover {
+  background: #047857;
+  transform: scale(1.1);
+}
+
+/* Slides Container */
+.slides-container {
+  width: 100%;
+  max-width: 80rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.slide-content {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+@media (min-width: 768px) {
+  .slide-content {
+    padding: 3rem;
+  }
+}
+
+/* Cover Slide */
+.cover-content {
+  padding: 3rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Typography */
+.slide-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #059669;
+  padding-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #059669;
+  margin-bottom: 1rem;
+}
+
+.content-subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.content-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.verse-card,
+.hadith-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  height: 100%;
+}
+
+.outline-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #059669;
+  transition: transform 0.3s ease;
+}
+
+.outline-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.card-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #6b7280;
+}
+
+.card-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Arabic Text */
+.arabic-text {
+  font-family: "Amiri", serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin: 1rem 0;
+}
+
+.arabic-text.large {
+  font-size: 1.5rem;
+}
+
+.arabic-text.medium {
+  font-size: 1.25rem;
+}
+
+.arabic-text.small {
+  font-size: 1rem;
+}
+
+/* Translations & Sources */
+.translation {
+  color: #6b7280;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.verse-source,
+.hadith-source {
+  color: #059669;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.source {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Special Boxes */
+.fact-box {
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin: 1rem 0;
+}
+
+.supporting-evidence {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin: 1rem 0;
+}
+
+.explanation {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Method Icons */
+.method-icon {
+  width: 3rem;
+  height: 3rem;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #059669;
+  font-size: 1.25rem;
+}
+
+/* Mazhab Styles */
+.mazhab-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.mazhab-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.mazhab-name {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.mazhab-info {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.ruling-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.ruling-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.ruling-opinion {
+  margin: 1rem 0;
+}
+
+.opinion-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.opinion-text {
+  font-family: "Amiri", serif;
+  direction: rtl;
+  text-align: right;
+  font-size: 1.125rem;
+  margin: 0.5rem 0;
+}
+
+.opinion-translation {
+  color: #6b7280;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.ruling-explanation {
+  color: #6b7280;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.ruling-reference {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.mazhab-note {
+  background: #f0fdf4;
+  border: 1px solid #a7f3d0;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+}
+
+.mazhab-note i {
+  color: #059669;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.mazhab-note p {
+  color: #065f46;
+  margin: 0;
+}
+
+/* Principle Cards */
+.principle-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.principle-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.principle-icon {
+  width: 3rem;
+  height: 3rem;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #059669;
+}
+
+.principle-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.principle-source {
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.principle-application {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.principle-application h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.principle-application p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.additional-principles {
+  margin-top: 2rem;
+}
+
+.additional-principles .principle-item {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table th {
+  background: #059669;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table tr:hover {
+  background: #f9fafb;
+}
+
+.status-haram {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-makruh {
+  background: #fffbeb;
+  color: #d97706;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-boleh {
+  background: #f0fdf4;
+  color: #16a34a;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Argument Cards */
+.argument-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+/* Reference Items */
+.reference-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.reference-item:last-child {
+  border-bottom: none;
+}
+
+/* Slide Indicators */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.slide-indicators button {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slide-indicators button.active {
+  background: #059669;
+  transform: scale(1.2);
+}
+
+.slide-indicators button:hover {
+  background: #047857;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slides-container {
+    margin: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .slide-content {
+    padding: 1rem;
+  }
+
+  .cover-content {
+    padding: 1.5rem;
+  }
+
+  .slide-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .arabic-text {
+    font-size: 1rem;
+  }
+
+  .arabic-text.large {
+    font-size: 1.125rem;
+  }
+
+  .mazhab-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mazhab-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .nav-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav-btn,
+  .slide-counter,
+  .slide-indicators {
+    display: none !important;
+  }
+
+  .slide {
+    display: block !important;
+    opacity: 1 !important;
+    page-break-after: always;
+  }
+
+  .slides-container {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .slide-content {
+    padding: 1rem;
+  }
+}

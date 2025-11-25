@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desain Toilet & Sanitasi - Perspektif Fikih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+      <div
+        id="progress"
+        class="h-full bg-green-600 transition-all duration-300 w-0"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-4 z-40"
+    >
+      <button id="prev" class="nav-btn" aria-label="Slide sebelumnya">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="next" class="nav-btn" aria-label="Slide selanjutnya">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </nav>
+
+    <!-- Slide Counter -->
+    <div
+      class="fixed top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-green-700 font-medium shadow-sm z-40"
+    >
+      <span id="current-slide">1</span> / <span id="total-slides">14</span>
+    </div>
+
+    <!-- Slides Container -->
+    <main class="slides-container">
+      <!-- Slide 1: Cover -->
+      <section class="slide active" id="slide-1">
+        <div class="cover-content">
+          <div class="text-center">
+            <div class="arabic text-xl mb-4">
+              السلام عليكم ورحمة الله وبركاته
+            </div>
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">
+              DESAIN BANGUNAN TOILET DAN SANITASI AIR<br />DALAM BERSUCI
+              PERSPEKTIF FIKIH
+            </h1>
+            <div class="h-1 w-24 bg-green-600 mx-auto my-6"></div>
+            <p class="text-xl text-gray-600 mb-2">
+              Presentasi Makalah Fikih Kontemporer
+            </p>
+            <div class="space-y-2 mb-8">
+              <p class="text-lg">
+                Disusun Oleh:<br /><span class="font-semibold"
+                  >[Nama Lengkap]</span
+                ><br /><span class="text-gray-600">[NIM]</span>
+              </p>
+              <p class="text-lg">
+                Dosen Pengampu:<br /><span class="font-semibold"
+                  >[Prof. Dr. Nama Dosen]</span
+                >
+              </p>
+            </div>
+
+            <div
+              class="arabic text-2xl mb-4 p-4 bg-green-50 rounded-lg inline-block"
+            >
+              ﴿إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ﴾
+            </div>
+            <p class="text-gray-700 italic mb-2">
+              "Sesungguhnya Allah menyukai orang-orang yang bertaubat dan
+              menyukai orang-orang yang menyucikan diri."
+            </p>
+            <p class="text-gray-600">(QS. Al-Baqarah: 222)</p>
+
+            <div class="mt-10 text-gray-600">
+              <p>UNIVERSITAS [NAMA UNIVERSITAS]</p>
+              <p>FAKULTAS SYARIAH DAN HUKUM</p>
+              <p>TAHUN AJARAN 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 2: Pendahuluan -->
+      <section class="slide" id="slide-2">
+        <div class="slide-content">
+          <h2 class="slide-title">PENDAHULUAN</h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Kolom 1 -->
+            <div class="content-card">
+              <h3 class="content-subtitle">
+                1. Pentingnya Integrasi antara Desain Sanitasi Modern dengan
+                Ketentuan Fiqh Thaharah
+              </h3>
+
+              <div class="arabic-text">
+                ﴿إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ
+                الْمُتَطَهِّرِينَ﴾
+              </div>
+              <p class="translation">
+                "Sesungguhnya Allah menyukai orang-orang yang bertaubat dan
+                menyukai orang-orang yang menyucikan diri." (QS. Al-Baqarah:
+                222)
+              </p>
+
+              <div class="arabic-text">الطُّهُورُ شَطْرُ الْإِيمَانِ</div>
+              <p class="translation">
+                "Bersuci itu separuh iman." (HR. Muslim no. 223)
+              </p>
+            </div>
+
+            <!-- Kolom 2 -->
+            <div class="content-card">
+              <h3 class="content-subtitle">
+                2. Permasalahan: Minimnya Pemahaman Aspek Fiqh dalam Desain
+                Toilet Modern
+              </h3>
+
+              <div class="arabic-text">
+                إِذَا أَتَيْتُمُ الْغَائِطَ فَلَا تَسْتَقْبِلُوا الْقِبْلَةَ
+                وَلَا تَسْتَدْبِرُوهَا
+              </div>
+              <p class="translation">
+                "Jika kalian buang air besar, janganlah menghadap kiblat dan
+                membelakanginya." (HR. Bukhari no. 144)
+              </p>
+
+              <div class="fact-box">
+                <h4 class="font-semibold text-red-700 mb-3">Fakta Lapangan:</h4>
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>
+                    Banyak toilet modern tidak mempertimbangkan arah kiblat
+                  </li>
+                  <li>Penggunaan bahan tidak sesuai standar thaharah</li>
+                  <li>Sistem sanitasi menghambat kesempurnaan bersuci</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Kolom 3 -->
+            <div class="content-card">
+              <h3 class="content-subtitle">
+                3. Tujuan: Memberikan Panduan Desain Toilet sesuai Standar Fiqh
+                4 Mazhab
+              </h3>
+
+              <div class="arabic-text">
+                جَلَبُ الْمَصَالِحِ وَدَرْءُ الْمَفَاسِدِ
+              </div>
+              <p class="translation">
+                "Mendatangkan kemaslahatan dan menolak kerusakan"
+              </p>
+              <p class="source">
+                (Merupakan kaidah ushul fiqh yang disarikan dari maqashid
+                syariah)
+              </p>
+
+              <div class="supporting-evidence">
+                <h4 class="font-semibold text-green-700 mb-2">
+                  Dalil Pendukung Kaidah:
+                </h4>
+                <div class="arabic-text small">لَا ضَرَرَ وَلَا ضِرَارَ</div>
+                <p class="translation">
+                  "Tidak boleh membahayakan diri sendiri dan orang lain." (HR.
+                  Ibnu Majah)
+                </p>
+              </div>
+
+              <div class="mt-4">
+                <h4 class="font-semibold text-gray-800 mb-2">
+                  Tujuan Spesifik:
+                </h4>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li>Analisis ketentuan thaharah 4 mazhab</li>
+                  <li>Merumuskan prinsip desain toilet islami</li>
+                  <li>Solusi aplikatif untuk arsitek dan muslim</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Latar Belakang & Rumusan Masalah -->
+      <section class="slide" id="slide-3">
+        <div class="slide-content">
+          <h2 class="slide-title">LATAR BELAKANG & RUMUSAN MASALAH</h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- A. Latar Belakang -->
+            <div class="space-y-6">
+              <div>
+                <h3 class="section-title">A. Latar Belakang Masalah</h3>
+                <div class="fact-box">
+                  <h4 class="font-semibold text-blue-700 mb-3">
+                    Fakta Kontemporer:
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-2">
+                    <li>
+                      65% toilet modern di Indonesia tidak mempertimbangkan arah
+                      kiblat (Survey LP2M, 2023)
+                    </li>
+                    <li>
+                      Maraknya penggunaan bahan non-porous yang sulit
+                      dibersihkan dari najis
+                    </li>
+                    <li>
+                      Minimnya integrasi ilmu arsitektur dengan fiqh thaharah
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4 p-4 bg-red-50 rounded-lg">
+                  <h4 class="font-semibold text-red-700 mb-2">Dampak:</h4>
+                  <ul class="list-disc pl-5 space-y-1">
+                    <li>Potensi tidak sahnya wudhu dan sholat</li>
+                    <li>Pelanggaran etika buang hajat sesuai sunnah</li>
+                    <li>Hilangnya keberkahan dalam ibadah</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- B. Definisi Istilah Kunci -->
+              <div>
+                <h3 class="section-title">B. Definisi Istilah Kunci</h3>
+                <div class="space-y-3">
+                  <div class="p-3 bg-gray-50 rounded">
+                    <h4 class="font-semibold">1. Toilet (المرحاض)</h4>
+                    <p class="text-sm">
+                      Tempat buang hajat yang memenuhi standar kebersihan dan
+                      syariat
+                    </p>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded">
+                    <h4 class="font-semibold">2. Thaharah (الطهارة)</h4>
+                    <p class="text-sm">
+                      Bersuci dari hadats dan najis dengan media yang
+                      disyariatkan
+                    </p>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded">
+                    <h4 class="font-semibold">3. Istinja' (الاستنجاء)</h4>
+                    <p class="text-sm">
+                      Membersihkan najis dari dua jalan (qubul & dubur) dengan
+                      air atau batu
+                    </p>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded">
+                    <h4 class="font-semibold">4. Air Mutlak (الماء المطلق)</h4>
+                    <p class="text-sm">
+                      Air yang suci dan menyucikan sesuai sifat asal
+                      penciptaannya
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- C. Rumusan Masalah & D. Urgensi -->
+            <div class="space-y-6">
+              <!-- C. Rumusan Masalah -->
+              <div>
+                <h3 class="section-title">C. Rumusan Masalah</h3>
+                <div class="space-y-4">
+                  <div class="p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">
+                      Bagaimana status hukum desain toilet dan sanitasi air
+                      menurut 4 mazhab?
+                    </h4>
+                    <p class="text-sm text-gray-700">
+                      Analisis perbandingan mazhab Hanafi, Maliki, Syafi'i,
+                      Hambali
+                    </p>
+                  </div>
+                  <div class="p-4 bg-green-50 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">
+                      Dalil mana yang menjadi pijakan masing-masing mazhab?
+                    </h4>
+                    <p class="text-sm text-gray-700">
+                      Eksplorasi dalil naqli dan kaidah fiqh yang digunakan
+                    </p>
+                  </div>
+                  <div class="p-4 bg-purple-50 rounded-lg">
+                    <h4 class="font-semibold text-purple-800 mb-2">
+                      Pendapat mana yang paling relevan dengan konteks kekinian?
+                    </h4>
+                    <p class="text-sm text-gray-700">
+                      Analisis kontekstualisasi dengan teknologi modern
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- D. Urgensi Pembahasan -->
+              <div>
+                <h3 class="section-title">D. Urgensi Pembahasan</h3>
+                <div class="p-4 bg-yellow-50 rounded-lg">
+                  <div class="arabic-text">
+                    مَا يُرِيدُ اللَّهُ لِيَجْعَلَ عَلَيْكُمْ مِنْ حَرَجٍ
+                  </div>
+                  <p class="translation">
+                    "Allah tidak ingin menyulitkan kamu" (QS. Al-Maidah: 6)
+                  </p>
+                  <ul class="list-disc pl-5 mt-3 space-y-1">
+                    <li>Mencegah kesalahan ibadah akibat ketidaktahuan</li>
+                    <li>Memandu perkembangan arsitektur islami</li>
+                    <li>Mewujudkan kemaslahatan umat dalam hal bersuci</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Outline Presentasi -->
+      <section class="slide" id="slide-4">
+        <div class="slide-content">
+          <h2 class="slide-title">OUTLINE PRESENTASI</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="outline-card">
+              <div class="card-header">
+                <div class="card-number">1</div>
+                <h3 class="card-title">Pendahuluan</h3>
+              </div>
+              <ul class="card-list">
+                <li>Latar Belakang & Urgensi</li>
+                <li>Rumusan Masalah</li>
+                <li>Tujuan Studi</li>
+              </ul>
+            </div>
+
+            <div class="outline-card">
+              <div class="card-header">
+                <div class="card-number">2</div>
+                <h3 class="card-title">Landasan Teoritis</h3>
+              </div>
+              <ul class="card-list">
+                <li>Dalil Qur'an & Hadis</li>
+                <li>Kaidah Fiqh</li>
+                <li>Konsep Thaharah</li>
+              </ul>
+            </div>
+
+            <div class="outline-card">
+              <div class="card-header">
+                <div class="card-number">3</div>
+                <h3 class="card-title">Analisis 4 Mazhab</h3>
+              </div>
+              <ul class="card-list">
+                <li>Mazhab Syafi'i</li>
+                <li>Mazhab Hanafi</li>
+                <li>Mazhab Maliki</li>
+                <li>Mazhab Hambali</li>
+              </ul>
+            </div>
+
+            <div class="outline-card">
+              <div class="card-header">
+                <div class="card-number">4</div>
+                <h3 class="card-title">Implementasi & Penutup</h3>
+              </div>
+              <ul class="card-list">
+                <li>Prinsip Toilet Islami</li>
+                <li>Studi Kasus</li>
+                <li>Kesimpulan & Rekomendasi</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg"
+          >
+            <h3 class="section-title text-center mb-4">
+              Metodologi Penelitian
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="text-center">
+                <div class="method-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4 class="font-semibold">Studi Pustaka</h4>
+                <p class="text-sm">Analisis kitab klasik dan kontemporer</p>
+              </div>
+              <div class="text-center">
+                <div class="method-icon">
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <h4 class="font-semibold">Analisis Komparatif</h4>
+                <p class="text-sm">Perbandingan 4 mazhab</p>
+              </div>
+              <div class="text-center">
+                <div class="method-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h4 class="font-semibold">Solusi Kontekstual</h4>
+                <p class="text-sm">Aplikasi untuk kondisi modern</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Landasan Al-Qur'an -->
+      <section class="slide" id="slide-5">
+        <div class="slide-content">
+          <h2 class="slide-title">
+            LANDASAN AL-QUR'AN TENTANG SANITASI & DESAIN
+          </h2>
+
+          <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-gray-700 mb-6 text-center">
+              Al-Qur'an memberikan prinsip-prinsip fundamental yang langsung
+              terkait dengan pengelolaan air dan tata ruang.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Ayat 1 -->
+              <div class="verse-card">
+                <div class="arabic-text large">
+                  أَفَرَأَيْتُمُ الْمَاءَ الَّذِي تَشْرَبُونَ
+                </div>
+                <p class="translation">
+                  "Maka terangkanlah kepadaku tentang air yang kamu minum."
+                </p>
+                <p class="verse-source">(QS. Al-Waqi'ah: 68)</p>
+                <div class="explanation">
+                  <p>
+                    Dalam Surah Al-Waqi'ah ayat 68, Allah mengajukan pertanyaan
+                    reflektif tentang air yang kita minum, yang menegaskan bahwa
+                    air adalah karunia Allah yang harus disyukuri dan dikelola
+                    dengan baik.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Ayat 2 -->
+              <div class="verse-card">
+                <div class="arabic-text large">
+                  وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ
+                </div>
+                <p class="translation">
+                  "Dan dari air Kami jadikan segala sesuatu yang hidup."
+                </p>
+                <p class="verse-source">(QS. Al-Anbiya': 30)</p>
+                <div class="explanation">
+                  <p>
+                    Ini menunjukkan betapa sentralnya posisi air dalam
+                    kehidupan, termasuk untuk bersuci. Ayat ini mendorong kita
+                    untuk merancang sistem plumbing dan saluran air dalam toilet
+                    yang menjamin kelancaran dan kebersihan sirkulasi air.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Ayat 3 -->
+              <div class="verse-card">
+                <div class="arabic-text large">
+                  وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ
+                </div>
+                <p class="translation">
+                  "Dan Dia tidak menjadikan kesulitan untukmu dalam agama."
+                </p>
+                <p class="verse-source">(QS. Al-Hajj: 78)</p>
+                <div class="explanation">
+                  <p>
+                    Prinsip tidak menyulitkan dalam agama memberikan ruang bagi
+                    inovasi desain toilet modern selama tujuannya untuk
+                    memudahkan umat dalam beribadah, asalkan tidak melanggar
+                    batasan-batasan syar'i.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Landasan Hadis -->
+      <section class="slide" id="slide-6">
+        <div class="slide-content">
+          <h2 class="slide-title">
+            LANDASAN HADIS TENTANG TATA RUANG & SANITASI AIR
+          </h2>
+
+          <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-gray-700 mb-8 text-center">
+              Hadis Nabi ﷺ memberikan pedoman yang sangat teknis mengenai tata
+              letak dan penggunaan air.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Hadis 1 -->
+              <div class="hadith-card">
+                <div class="arabic-text">
+                  لَا يَبُولَنَّ أَحَدُكُمْ فِي الْمَاءِ الدَّائِمِ
+                </div>
+                <p class="translation">
+                  "Janganlah sekali-kali salah seorang di antara kamu kencing
+                  pada air yang diam (tidak mengalir)."
+                </p>
+                <p class="hadith-source">(HR. Muslim)</p>
+                <div class="explanation">
+                  <p>
+                    Larangan buang air kecil pada air yang diam adalah sebuah
+                    aturan sanitasi modern yang mencegah pencemaran dan
+                    penyakit. Ini menjadi prinsip dasar dalam merancang tempat
+                    wudhu dan toilet.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hadis 2 -->
+              <div class="hadith-card">
+                <div class="arabic-text">
+                  كَانَ يَنْهَى أَنْ يُبَالَ فِي الْجُحْرِ
+                </div>
+                <p class="translation">
+                  "Dahulu Nabi melarang kencing di dalam lubang."
+                </p>
+                <p class="hadith-source">(HR. Abu Dawud - hasan)</p>
+                <div class="explanation">
+                  <p>
+                    Hadis tentang kencing di lubang mengandung hikmah ekologis
+                    dan medis yang luar biasa, di mana Nabi mencegah pencemaran
+                    tanah dan sumber air.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hadis 3 -->
+              <div class="hadith-card md:col-span-2">
+                <div class="arabic-text">
+                  إِنَّهُ كَانَ يُنْهَى أَنْ يُبَالَ فِي الْمُسْتَحَمِّ
+                </div>
+                <p class="translation">
+                  "Sesungguhnya Nabi dulu melarang kencing di tempat mandi."
+                </p>
+                <p class="hadith-source">(HR. An-Nasa'i - shahih)</p>
+                <div class="explanation">
+                  <p>
+                    Larangan kencing di tempat mandi mengajarkan pentingnya
+                    pemisahan fungsi ruang dan aliran air. Hadis ini
+                    menginspirasi desain toilet yang memisahkan secara jelas
+                    area buang air, area membasuh, dan area wudhu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Kaidah Fiqh Sanitasi -->
+      <section class="slide" id="slide-7">
+        <div class="slide-content">
+          <h2 class="slide-title">KAIDAH FIQH TERKAIT SANITASI</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <!-- Kaidah Pokok -->
+              <div class="principle-card">
+                <div class="principle-header">
+                  <div class="principle-icon">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <h3>Kaidah Pokok</h3>
+                </div>
+                <div class="arabic-text medium">
+                  جَلَبُ الْمَصَالِحِ وَدَرْءُ الْمَفَاسِدِ
+                </div>
+                <p class="translation">
+                  "Mendatangkan kemaslahatan dan menolak kerusakan"
+                </p>
+                <div class="principle-source">
+                  <strong>Sumber:</strong> Al-Muwafaqat karya Imam Asy-Syathibi
+                </div>
+                <div class="principle-application">
+                  <h4>Penerapan:</h4>
+                  <p>
+                    Desain toilet harus mempertimbangkan kemaslahatan pengguna
+                    dan mencegah segala bentuk kerusakan baik secara kesehatan
+                    maupun syar'i.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Kaidah Penolakan Mudharat -->
+              <div class="principle-card">
+                <div class="principle-header">
+                  <div class="principle-icon">
+                    <i class="fas fa-times-circle"></i>
+                  </div>
+                  <h3>Kaidah Penolakan Mudharat</h3>
+                </div>
+                <div class="arabic-text medium">الضَّرَرُ يُزَالُ</div>
+                <p class="translation">"Kemudharatan harus dihilangkan"</p>
+                <div class="principle-source">
+                  <strong>Sumber:</strong> Al-Asybah wan Nazha'ir oleh
+                  As-Suyuthi
+                </div>
+                <div class="principle-application">
+                  <h4>Penerapan:</h4>
+                  <p>
+                    Segala bentuk mudharat dalam desain toilet seperti bau,
+                    kotoran, dan ketidaknyamanan harus dihilangkan melalui
+                    desain yang tepat.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-principles">
+              <h3 class="section-title text-center mb-6">
+                Kaidah Pendukung Lainnya:
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="principle-item">
+                  <div class="arabic-text small">
+                    الأَصْلُ فِي الْأَشْيَاءِ الْإِبَاحَة
+                  </div>
+                  <p>"Hukum asal segala sesuatu adalah boleh"</p>
+                </div>
+                <div class="principle-item">
+                  <div class="arabic-text small">الْعَادَةُ مُحَكَّمَةٌ</div>
+                  <p>
+                    "Kebiasaan yang baik dapat dijadikan pertimbangan hukum"
+                  </p>
+                </div>
+                <div class="principle-item">
+                  <div class="arabic-text small">
+                    الْمَشَقَّةُ تَجْلِبُ التَّيْسِيرَ
+                  </div>
+                  <p>"Kesulitan mendatangkan kemudahan"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Analisis Mazhab Syafi'i -->
+      <section class="slide" id="slide-8">
+        <div class="slide-content">
+          <h2 class="slide-title">ANALISIS MAZHAB SYAFI'I</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="mazhab-header">
+              <div class="mazhab-icon bg-blue-100 text-blue-700">
+                <i class="fas fa-book"></i>
+              </div>
+              <div>
+                <h3 class="mazhab-name">Mazhab Syafi'i</h3>
+                <p class="mazhab-info">
+                  Imam Muhammad bin Idris Asy-Syafi'i (150-204 H)
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+              <!-- A. Landasan Hukum Arah Toilet -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">A. Landasan Hukum Arah Toilet</h4>
+                <div class="arabic-text small">
+                  إِذَا أَتَيْتُمُ الْغَائِطَ فَلَا تَسْتَقْبِلُوا الْقِبْلَةَ
+                  وَلَا تَسْتَدْبِرُوهَا
+                </div>
+                <p class="translation">
+                  "Jika kalian buang air, janganlah menghadap kiblat atau
+                  membelakanginya." (HR. Muslim)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-red-100 text-red-700">
+                    Haram
+                  </div>
+                  <p class="opinion-text">
+                    "يَحْرُمُ اسْتِقْبَالُ الْقِبْلَةِ وَاسْتِدْبَارُهَا فِي
+                    الْفَضَاءِ وَالْبُنْيَانِ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Haram menghadap dan membelakangi kiblat baik di tempat
+                    terbuka maupun dalam bangunan."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Syafi'i memahami hadis ini secara mutlak, tanpa
+                    membedakan tempat terbuka atau tertutup.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Umm, Imam Syafi'i, jilid 1, h.
+                  45
+                </div>
+              </div>
+
+              <!-- B. Landasan Hukum Air Musta'mal -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">B. Landasan Hukum Air Musta'mal</h4>
+                <div class="arabic-text small">
+                  إِنَّ الْمَاءَ طَهُورٌ لَا يُنَجِّسُهُ شَيْءٌ
+                </div>
+                <p class="translation">
+                  "Sesungguhnya air itu suci, tidak ada sesuatu pun yang
+                  menajiskannya." (HR. At-Tirmidzi)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-yellow-100 text-yellow-700">
+                    Makruh
+                  </div>
+                  <p class="opinion-text">
+                    "الْمَاءُ الْمُسْتَعْمَلُ فِي فَرْضِ الطَّهَارَةِ مَكْرُوهٌ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Air yang digunakan untuk bersuci yang fardhu statusnya
+                    makruh."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Meskipun air secara dzat tetap suci, namun makruh digunakan
+                    ulang untuk menghormati ibadah.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Majmu', Imam Nawawi, jilid 1,
+                  h. 156
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 mazhab-note">
+              <i class="fas fa-info-circle"></i>
+              <p>
+                Mazhab Syafi'i dikenal dengan ketelitian dalam masalah thaharah
+                dan banyak diikuti di Asia Tenggara termasuk Indonesia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: Analisis Mazhab Hanafi -->
+      <section class="slide" id="slide-9">
+        <div class="slide-content">
+          <h2 class="slide-title">ANALISIS MAZHAB HANAFI</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="mazhab-header">
+              <div class="mazhab-icon bg-green-100 text-green-700">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div>
+                <h3 class="mazhab-name">Mazhab Hanafi</h3>
+                <p class="mazhab-info">Imam Abu Hanifah An-Nu'man (80-150 H)</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+              <!-- A. Landasan Hukum Arah Toilet -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">A. Landasan Hukum Arah Toilet</h4>
+                <div class="arabic-text small">
+                  لَا تُسْتَقْبِلُوا الْقِبْلَةَ بِغَائِطٍ وَلَا بَوْلٍ
+                </div>
+                <p class="translation">
+                  "Janganlah menghadap kiblat ketika buang air besar atau
+                  kecil." (HR. Bukhari)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-yellow-100 text-yellow-700">
+                    Makruh
+                  </div>
+                  <p class="opinion-text">
+                    "يُكْرَهُ اسْتِقْبَالُ الْقِبْلَةِ فِي الْبُنْيَانِ
+                    وَيَحْرُمُ فِي الْفَضَاءِ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Makruh menghadap kiblat dalam bangunan dan haram di tempat
+                    terbuka."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Hanafi membedakan antara tempat terbuka dan tertutup
+                    berdasarkan pemahaman terhadap konteks hadis.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Badai' ash-Shanai', Al-Kasani,
+                  jilid 1, h. 89
+                </div>
+              </div>
+
+              <!-- B. Landasan Hukum Volume Air -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">B. Landasan Hukum Volume Air</h4>
+                <div class="arabic-text small">
+                  إِذَا بَلَغَ الْمَاءُ قُلَّتَيْنِ لَمْ يَحْمِلِ الْخَبَثَ
+                </div>
+                <p class="translation">
+                  "Apabila air mencapai dua qullah, maka tidak membawa kotoran."
+                  (HR. Abu Dawud)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-blue-100 text-blue-700">
+                    Batas 45 liter
+                  </div>
+                  <p class="opinion-text">
+                    "الْمَاءُ الْقَلِيلُ إِذَا وَقَعَتْ فِيهِ نَجَاسَةٌ فَهُوَ
+                    نَجِسٌ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Air yang sedikit jika kemasukan najis, maka statusnya
+                    najis."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Hanafi menetapkan batas 10 dirham (±45 liter) sebagai
+                    air sedikit berdasarkan ijtihad mereka.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Mabsuth, As-Sarakhsi, jilid 1,
+                  h. 67
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 mazhab-note">
+              <i class="fas fa-info-circle"></i>
+              <p>
+                Mazhab Hanafi dikenal dengan fleksibilitas dan pertimbangan
+                kemudahan (rukhsah) dalam berbagai situasi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 10: Analisis Mazhab Maliki -->
+      <section class="slide" id="slide-10">
+        <div class="slide-content">
+          <h2 class="slide-title">ANALISIS MAZHAB MALIKI</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="mazhab-header">
+              <div class="mazhab-icon bg-purple-100 text-purple-700">
+                <i class="fas fa-gavel"></i>
+              </div>
+              <div>
+                <h3 class="mazhab-name">Mazhab Maliki</h3>
+                <p class="mazhab-info">Imam Malik bin Anas (93-179 H)</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+              <!-- A. Landasan Hukum Arah Toilet -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">A. Landasan Hukum Arah Toilet</h4>
+                <div class="arabic-text small">
+                  إِذَا أَتَيْتُمُ الْغَائِطَ فَلَا تَسْتَقْبِلُوا الْقِبْلَةَ
+                  وَلَا تَسْتَدْبِرُوهَا
+                </div>
+                <p class="translation">
+                  "Jika kalian buang air, janganlah menghadap kiblat atau
+                  membelakanginya." (HR. Muslim)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-green-100 text-green-700">
+                    Boleh
+                  </div>
+                  <p class="opinion-text">
+                    "لَا بَأْسَ بِاسْتِقْبَالِ الْقِبْلَةِ فِي الْبُنْيَانِ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Tidak mengapa menghadap kiblat dalam bangunan."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Maliki berpendapat larangan hanya berlaku di tempat
+                    terbuka, karena dalam bangunan sudah ada penghalang.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Mudawwanah al-Kubra, Imam
+                  Malik, jilid 1, h. 34
+                </div>
+              </div>
+
+              <!-- B. Landasan Hukum Air Dua Qullah -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">B. Landasan Hukum Air Dua Qullah</h4>
+                <div class="arabic-text small">
+                  إِذَا بَلَغَ الْمَاءُ قُلَّتَيْنِ لَمْ يَحْمِلِ الْخَبَثَ
+                </div>
+                <p class="translation">
+                  "Apabila air mencapai dua qullah, maka tidak membawa kotoran."
+                  (HR. Abu Dawud)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-blue-100 text-blue-700">
+                    Batas 216 liter
+                  </div>
+                  <p class="opinion-text">
+                    "الْمَاءُ الْكَثِيرُ إِذَا وَقَعَتْ فِيهِ نَجَاسَةٌ لَمْ
+                    يَنْجُسْ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Air yang banyak jika kemasukan najis tidak menjadi najis."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Maliki menetapkan 2 qullah sebagai batas air banyak,
+                    sama dengan Syafi'i namun dengan takaran berbeda.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Mukhtashar Khalil, Khalil bin
+                  Ishaq, h. 12
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 mazhab-note">
+              <i class="fas fa-info-circle"></i>
+              <p>
+                Mazhab Maliki banyak diterapkan di Afrika Utara dan dikenal
+                dengan pendekatan praktis berdasarkan tradisi Madinah
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 11: Analisis Mazhab Hambali -->
+      <section class="slide" id="slide-11">
+        <div class="slide-content">
+          <h2 class="slide-title">ANALISIS MAZHAB HAMBALI</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <div class="mazhab-header">
+              <div class="mazhab-icon bg-orange-100 text-orange-700">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <h3 class="mazhab-name">Mazhab Hambali</h3>
+                <p class="mazhab-info">Imam Ahmad bin Hambal (164-241 H)</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+              <!-- A. Landasan Hukum Arah Toilet -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">A. Landasan Hukum Arah Toilet</h4>
+                <div class="arabic-text small">
+                  إِذَا أَتَيْتُمُ الْغَائِطَ فَلَا تَسْتَقْبِلُوا الْقِبْلَةَ
+                  وَلَا تَسْتَدْبِرُوهَا
+                </div>
+                <p class="translation">
+                  "Jika kalian buang air, janganlah menghadap kiblat atau
+                  membelakanginya." (HR. Muslim)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-green-100 text-green-700">
+                    Boleh
+                  </div>
+                  <p class="opinion-text">
+                    "يَحْرُمُ اسْتِقْبَالُ الْقِبْلَةِ وَاسْتِدْبَارُهَا فِي
+                    غَيْرِ الْبُنْيَانِ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Haram menghadap dan membelakangi kiblat di luar bangunan."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Hambali sepakat dengan Hanafi bahwa larangan hanya
+                    berlaku di tempat terbuka.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Mughni, Ibnu Qudamah, jilid 1,
+                  h. 145
+                </div>
+              </div>
+
+              <!-- B. Landasan Hukum Air Musta'mal -->
+              <div class="ruling-card">
+                <h4 class="ruling-title">B. Landasan Hukum Air Musta'mal</h4>
+                <div class="arabic-text small">
+                  إِنَّ الْمَاءَ طَهُورٌ لَا يُنَجِّسُهُ شَيْءٌ
+                </div>
+                <p class="translation">
+                  "Sesungguhnya air itu suci, tidak ada sesuatu pun yang
+                  menajiskannya." (HR. At-Tirmidzi)
+                </p>
+
+                <div class="ruling-opinion">
+                  <div class="opinion-status bg-green-100 text-green-700">
+                    Boleh
+                  </div>
+                  <p class="opinion-text">
+                    "الْمَاءُ الْمُسْتَعْمَلُ طَاهِرٌ فِي نَفْسِهِ"
+                  </p>
+                  <p class="opinion-translation">
+                    "Air musta'mal statusnya suci secara dzat."
+                  </p>
+                </div>
+
+                <div class="ruling-explanation">
+                  <p>
+                    Mazhab Hambali membolehkan penggunaan ulang air musta'mal
+                    selama tidak berubah sifatnya.
+                  </p>
+                </div>
+
+                <div class="ruling-reference">
+                  <strong>Referensi:</strong> Al-Furu', Ibnu Muflih, jilid 1, h.
+                  89
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 mazhab-note">
+              <i class="fas fa-info-circle"></i>
+              <p>
+                Mazhab Hambali dikenal dengan ketegasan dalam masalah thaharah
+                dan banyak diikuti di Semenanjung Arab
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 12: Analisis Komparatif -->
+      <section class="slide" id="slide-12">
+        <div class="slide-content">
+          <h2 class="slide-title">ANALISIS KOMPARATIF 4 MAZHAB</h2>
+
+          <div class="max-w-6xl mx-auto">
+            <!-- Tabel Perbandingan -->
+            <div class="mb-8">
+              <h3 class="section-title mb-4">Tabel Perbandingan 4 Mazhab</h3>
+              <div class="overflow-x-auto">
+                <table class="comparison-table">
+                  <thead>
+                    <tr>
+                      <th>Aspek</th>
+                      <th>Syafi'i</th>
+                      <th>Hanafi</th>
+                      <th>Maliki</th>
+                      <th>Hambali</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Arah Toilet dalam Bangunan</td>
+                      <td><span class="status-haram">Haram</span></td>
+                      <td><span class="status-makruh">Makruh</span></td>
+                      <td><span class="status-boleh">Boleh</span></td>
+                      <td><span class="status-boleh">Boleh</span></td>
+                    </tr>
+                    <tr>
+                      <td>Status Air Musta'mal</td>
+                      <td><span class="status-makruh">Makruh</span></td>
+                      <td><span class="status-makruh">Makruh</span></td>
+                      <td><span class="status-boleh">Boleh</span></td>
+                      <td><span class="status-boleh">Boleh</span></td>
+                    </tr>
+                    <tr>
+                      <td>Batas Air Banyak (Qullah)</td>
+                      <td>±270 liter</td>
+                      <td>±45 liter</td>
+                      <td>±216 liter</td>
+                      <td>±204 liter</td>
+                    </tr>
+                    <tr>
+                      <td>Material Lantai Toilet</td>
+                      <td>Boleh keramik</td>
+                      <td>Lebih baik tanah</td>
+                      <td>Boleh semua</td>
+                      <td>Boleh semua</td>
+                    </tr>
+                    <tr>
+                      <td>Sistem Pembuangan Air Kotor</td>
+                      <td>Wajib dijauhkan dari air bersih</td>
+                      <td>Boleh dengan filter</td>
+                      <td>Boleh dengan septic tank</td>
+                      <td>Wajib dipisahkan</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Titik Persamaan & Perbedaan -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <!-- Persamaan -->
+              <div>
+                <h3 class="section-title mb-4">Titik Persamaan</h3>
+                <div class="space-y-3">
+                  <div class="flex items-start">
+                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                    <span
+                      >Semua mazhab melarang menghadap kiblat di tempat
+                      terbuka</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                    <span>Semua mazhab mewajibkan menghilangkan najis</span>
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-check text-green-600 mt-1 mr-3"></i>
+                    <span>Semua mazhab melarang kencing di air diam</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Perbedaan -->
+              <div>
+                <h3 class="section-title mb-4">Titik Perbedaan</h3>
+                <div class="space-y-3">
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-circle text-blue-600 mt-1 mr-3 text-xs"
+                    ></i>
+                    <span
+                      >Arah toilet dalam bangunan: Syafi'i paling ketat</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-circle text-blue-600 mt-1 mr-3 text-xs"
+                    ></i>
+                    <span
+                      >Status air musta'mal: Hanafi & Syafi'i makruh, Maliki &
+                      Hambali boleh</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-circle text-blue-600 mt-1 mr-3 text-xs"
+                    ></i>
+                    <span>Batas volume air: Perbedaan takaran qullah</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Argumentasi Terkuat -->
+            <div>
+              <h3 class="section-title mb-4">
+                Argumentasi Terkuat Masing-Masing Mazhab
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="argument-card">
+                  <h4 class="font-semibold text-blue-700 mb-2">
+                    Mazhab Syafi'i
+                  </h4>
+                  <p class="text-sm">Kehati-hatian (ihtiyath) dalam ibadah</p>
+                </div>
+                <div class="argument-card">
+                  <h4 class="font-semibold text-green-700 mb-2">
+                    Mazhab Hanafi
+                  </h4>
+                  <p class="text-sm">Fleksibilitas dan realistis</p>
+                </div>
+                <div class="argument-card">
+                  <h4 class="font-semibold text-purple-700 mb-2">
+                    Mazhab Maliki
+                  </h4>
+                  <p class="text-sm">Mempertimbangkan kemaslahatan (urf)</p>
+                </div>
+                <div class="argument-card">
+                  <h4 class="font-semibold text-orange-700 mb-2">
+                    Mazhab Hambali
+                  </h4>
+                  <p class="text-sm">Kembali kepada sifat asal air</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 13: Kesimpulan -->
+      <section class="slide" id="slide-13">
+        <div class="slide-content">
+          <h2 class="slide-title">KESIMPULAN</h2>
+
+          <div class="max-w-4xl mx-auto">
+            <!-- Ringkasan Hasil Analisis -->
+            <div class="mb-8">
+              <h3 class="section-title mb-4">Ringkasan Hasil Analisis</h3>
+              <div class="space-y-4">
+                <div class="p-4 bg-green-50 rounded-lg">
+                  <h4 class="font-semibold text-green-800 mb-2">
+                    Prinsip Universal
+                  </h4>
+                  <p>
+                    Seluruh mazhab sepakat pada prinsip dasar menjaga kesucian
+                    (thaharah), menghormati kiblat di ruang terbuka, dan
+                    melindungi air dari kontaminasi najis.
+                  </p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg">
+                  <h4 class="font-semibold text-blue-800 mb-2">
+                    Variasi Implementasi
+                  </h4>
+                  <p>
+                    Terdapat perbedaan dalam penerapan teknis, seperti status
+                    hukum arah toilet dalam bangunan, batasan volume air suci,
+                    dan penggunaan air musta'mal.
+                  </p>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-lg">
+                  <h4 class="font-semibold text-purple-800 mb-2">
+                    Fleksibilitas Fiqh
+                  </h4>
+                  <p>
+                    Perbedaan pendapat antarmazhab menunjukkan kemampuan fiqh
+                    Islam dalam beradaptasi dengan perkembangan teknologi dan
+                    konteks lokal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pandangan Pilihan & Saran Aplikatif -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- Pandangan Pilihan -->
+              <div>
+                <h3 class="section-title mb-4">Pandangan Pilihan</h3>
+                <div class="p-4 bg-yellow-50 rounded-lg">
+                  <p>
+                    Berdasarkan analisis kontekstual, pendapat Mazhab Maliki dan
+                    Hanafi mengenai kebolehan menghadap kiblat dalam bangunan
+                    tertutup lebih relevan untuk desain toilet modern, dengan
+                    tetap mempertimbangkan kehati-hatian Mazhab Syafi'i dalam
+                    menjaga kesucian air.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Saran Aplikatif -->
+              <div>
+                <h3 class="section-title mb-4">Saran Aplikatif</h3>
+                <div class="space-y-3">
+                  <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                    <span
+                      >Desain Toilet Modern sebaiknya memisahkan area buang air,
+                      wudhu, dan dressing area</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                    <span
+                      >Sistem Plumbing harus menjamin tidak adanya percampuran
+                      antara air bersih dan air kotor</span
+                    >
+                  </div>
+                  <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                    <span
+                      >Konsultasi Ulama diperlukan untuk penerapan teknologi
+                      sanitasi baru seperti water recycling</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 14: Referensi -->
+      <section class="slide" id="slide-14">
+        <div class="slide-content">
+          <h2 class="slide-title">REFERENSI</h2>
+
+          <div class="max-w-4xl mx-auto">
+            <!-- Kitab Primer -->
+            <div class="mb-8">
+              <h3 class="section-title mb-4">Kitab Primer (Klasik)</h3>
+              <div class="space-y-3">
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Asy-Syafi'i, M. bin Idris. (820 M).
+                    <span class="italic">Al-Umm</span>. Dar al-Ma'rifah.
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Al-Kasani, A. bin M. (1191 M).
+                    <span class="italic"
+                      >Bada'i' as-Shana'i' fi Tartib asy-Syara'i'</span
+                    >. Dar al-Kutub al-Ilmiyyah.
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Al-Malik, M. bin Anas. (795 M).
+                    <span class="italic">Al-Mudawwanah al-Kubra</span>. Dar
+                    al-Kutub al-Ilmiyyah.
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Ibnu Qudamah, A. bin M. (1223 M).
+                    <span class="italic">Al-Mughni</span>. Dar Alam al-Kutub.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kitab Sekunder -->
+            <div class="mb-8">
+              <h3 class="section-title mb-4">Kitab Sekunder (Kontemporer)</h3>
+              <div class="space-y-3">
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Az-Zuhayli, W. (1985).
+                    <span class="italic">Al-Fiqh al-Islami wa Adillatuh</span>.
+                    Dar al-Fikr.
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p class="font-semibold">
+                    Al-Qardawi, Y. (2001).
+                    <span class="italic">Fi Fiqh al-Awlawiyyat</span>. Dar
+                    asy-Syuruq.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jurnal & Bahtsul Masail -->
+            <div>
+              <h3 class="section-title mb-4">Jurnal & Bahtsul Masail</h3>
+              <div class="space-y-3">
+                <div class="reference-item">
+                  <p>
+                    Majalah Al-Azhar (2020). "Tatbiqat at-Taharah fi al-Imarah
+                    al-Islamiyyah al-Mu'ashirah".
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p>
+                    Keputusan LBM NU (2022). "Hukum Penggunaan Water Closet
+                    Modern".
+                  </p>
+                </div>
+                <div class="reference-item">
+                  <p>
+                    Fatwa DSN-MUI No. 49/2023 tentang "Standar Sanitasi Islami".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Slide Indicator Dots -->
+    <div class="slide-indicators" id="slide-dots"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
